@@ -91,7 +91,6 @@ const run = async () => {
   
   console.log("sleep before selecting guest checkout");
   await new Promise(r => setTimeout(r, 2000));
-
   try{
     await page.click('button[id^=qa-guest-checkout]');
   }catch{
